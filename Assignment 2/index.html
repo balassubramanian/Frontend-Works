@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            user-select: none;
+            z-index: 1;
+        }
+
+        .left-btn {
+            left: 10px;
+        }
+
+        .right-btn {
+            right: 10px;
+        }
+
+
+        #email::placeholder {
+            color: white; 
+            opacity: 0.6; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light " >
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/PocketCube_(small).gif" class="img-fluid" alt="logo" style="width:40px;">
+        </a>
+        <div >
+            <ul class="navbar-nav flex-row " >
+            <li class="nav-item" style="padding-right:5px;"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item" style="padding-right:5px;"><a class="nav-link" href="#">Product</a></li>
+            <li class="nav-item" style="padding-right:5px;"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item" ><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div id="section1" class="container-fluid " style="padding-top:70px; padding-bottom:70px; background-image: url('assets/images/green.jpg');background-size: cover;background-position: center;background-repeat:no-repeat;color: white;">
+        <h1 style="text-align: center; margin-top: 0;">WE HELP YOUR BUSINESS</h1>
+        <p style="text-align: center;">Its long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <div class="d-flex justify-content-center"><button type="button" class="btn btn-light">Learn More</button></div>
+    </div>
+
+    <div id="section2" class="container" >
+        <h1 style="text-align: center;padding-top:70px; padding-bottom:70px;">OUR PRODUCT</h1>
+        <div class="row" style=" padding-bottom:70px;">
+            <div id="product1" class=" col-4 col-md-4 col-lg-4  col-xl-4">
+                <img src="assets/images/circle.png" style="width:40px;" class="mx-auto d-block">
+                <h2 class="text-center" >SEO</h2>
+                <p style="text-align: center;">It is a long established fact that a reader will be distracted by the.</p>
+            </div>
+            <div id="product2" class=" col-4 col-md-4 col-lg-4  col-xl-4">
+                <img src="assets/images/circle.png" style="width:40px;" class="mx-auto d-block">
+                <h2 class="text-center">Branding</h2>
+                <p style="text-align: center;">It is a long established fact that a reader will be distracted by the.</p>
+            </div>
+            <div id="product3" class=" col-4 col-md-4 col-lg-4  col-xl-4">
+                <img src="assets/images/circle.png" style="width:40px;" class="mx-auto d-block">
+                <h2 class="text-center">Logo</h2>
+                <p style="text-align: center;">It is a long established fact that a reader will be distracted by the.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="container-fluid" style="padding-top:70px; padding-bottom:70px; background-color: whitesmoke;">
+        <div class="row">
+            <div id="aboutustext" class="col-6 col-md-6 col-lg-6  col-xl-4" style="padding-left:19%; ">
+                <h2 >ABOUT US</h2>
+                <p >Its long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div id="aboutusIMAGE" class="col-6 col-md-6 col-lg-6  col-xl-4" style="padding-left:10%; ">
+                <img src="assets/images/chess.jpg" class="img-fluid"  style="width:420px;">
+            </div>
+        </div>    
+    </div>
+
+    <div id="section4" class="container-fluid" style="padding-top:70px; padding-bottom:70px;">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="0" ></li>
+                    <li data-target="#myCarousel" data-slide-to="0" ></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active" style="padding-left: 12%;padding-right: 12%;">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="assets/images/circle.png" style="width:40px;" class="mx-auto d-block">
+                            </div>
+                            <div class="col-6">
+                                <h6>JON DOE1</h6>
+                                <p>Its long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="item" style="padding-left: 12%;padding-right: 12%;">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="assets/images/circle.png" style="width:40px;" class="mx-auto d-block">
+                        </div>
+                        <div class="col-6">
+                            <h6>JON DOE2</h6>
+                            <p>Its long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="padding-left: 12%;padding-right: 12%;">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="assets/images/circle.png" style="width:40px;" class="mx-auto d-block">
+                        </div>
+                        <div class="col-6">
+                            <h6>JON DOE3</h6>
+                            <p>Its long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a href="#myCarousel" data-slide="prev" role="button" style=" background-color: white">
+                    <button class="nav-btn left-btn">&#10094;</button>
+                </a>
+                <a href="#myCarousel" data-slide="next" role="button" style=" background-color: white">
+                    <button class="nav-btn right-btn">&#10095;</button>
+                </a>
+            </div>
+        </div>
+    </div>    
+
+
+    <div id="section5" class="container-fluid " style="padding-top:70px; padding-bottom:70px; background-color: rgb(69, 158, 69);">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center ">
+                <form class="d-flex flex-row justify-content-center " style="align-items: center;flex-wrap: nowrap;">
+                    <input type="email" placeholder="Email ID" class="form-control mb-2 mr-sm-2" id="email" style="background-color:rgb(69, 158, 69);border-color: white;color: white;margin-right: 10px;">
+                    <button type="submit" class="btn btn-primary mb-2" style=" background-color:white;color: rgb(69, 158, 69);">Submit</button>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section6" class="container" >
+        <div class="row">
+            <div id="sec6div1" class="col-4 col-md-4 col-lg-4  col-xl-4">
+                <h3>About Company</h3>
+                <p style="text-align: left;">Its long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div id="sec6div2" class="col-4 col-md-4 col-lg-4  col-xl-4">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="sec6div23" class="col-4 col-md-4 col-lg-4  col-xl-4">
+                <h3>Contact Us</h3>
+                <p style="text-align: left;">info@company.com<br>+91 079 000000000</p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: black; color:white;text-align: center;">© 2024 Your Website. All rights reserved.</footer>
+    
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
