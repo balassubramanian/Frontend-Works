@@ -1,0 +1,30 @@
+<div style="text-align:center">
+  <h1>{{ title }}</h1>
+  <button (click)="getTodoList()">Fetch To-Do List</button>
+</div>
+
+<div style="text-align:center">
+  <h2>Add Record</h2>
+  <br>
+  <input id="nt" type="text" placeholder="Add title">
+  <br>
+  <input id="nd" type="text" placeholder="Add description">
+  <br>
+  <br>
+  <button (click)="addRecord()">Add</button>
+</div>
+
+<div style="text-align:center">
+  <h2>Enter title of record to be deleted</h2>
+  <br>
+  <input id="del" type="text" placeholder="Add id">
+  <button (click)="delRecord()">Delete</button>
+</div>
+<div *ngIf="todoList.length > 0">
+  <h2>To-Do List</h2>
+  <ul>
+    <li *ngFor="let todo of todoList">
+      <strong>{{ todo.title }}:</strong> {{ todo.description }} <strong>{{ todo.id }} </strong>
+    </li>
+  </ul>
+</div>
