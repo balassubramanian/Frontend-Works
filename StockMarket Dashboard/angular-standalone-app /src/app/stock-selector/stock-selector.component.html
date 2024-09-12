@@ -1,0 +1,56 @@
+<div class="container mt-5">
+    <div class="parent-container">
+      <div class="col-md-6">
+        <div class="card shadow p-4" style="background-color:aliceblue">
+          <div class="card-body">
+            <h3 class="card-title text-center mb-4">Stock Dashboard</h3>
+            <form>
+              <div class="mb-3">
+                <label for="stock1" class="form-label">Enter Stock Symbol</label>
+                <input
+                  class="form-control"
+                  [(ngModel)]="firstNameControl"
+                  name="first"
+                  id="stock1"
+                  type="text"
+                  placeholder="e.g. IBM"
+                />
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button
+                  type="button"
+                  class="btn btn-primary me-md-2"
+                  (click)="fetchStockData()"
+                >
+                  Submit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  (click)="displayChart()"
+                >
+                  Display Chart
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parent-container">
+    <div *ngIf="stockData" class="stock-text-container">
+      <h1>Stock Data </h1>
+      <h3>Time Series (5min)</h3>
+      <ul>
+        <li *ngFor="let entry of stockEntries">
+          <strong>{{ entry.date }}</strong>: Open: {{ entry.data['1. open'] }}, High: {{ entry.data['2. high'] }},
+          Low: {{ entry.data['3. low'] }}, Close: {{ entry.data['4. close'] }}, Volume: {{ entry.data['5. volume'] }}
+        </li>
+      </ul>
+    </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<app-stock-chart></app-stock-chart>
+<br>

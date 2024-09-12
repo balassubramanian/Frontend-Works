@@ -1,0 +1,35 @@
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  svg {
+    font: 10px sans-serif;
+  }
+  .chart-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background: aliceblue;
+  }
+  
+  .chart-container {
+    flex: 1;
+    margin: 0 10px; 
+    height: 600px; 
+    min-width: 400px; 
+    background: whitesmoke;
+
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container-wrapper {
+      flex-direction: column;
+    }
+  
+    .chart-container {
+      margin: 20px 0;
+    }
+  }
+  
